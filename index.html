@@ -3,23 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/main.css" class="rel">
   
   <title>QR code component</title>
 
 </head>
 <body>
 
-  <main class="qr-container">
-    <div class="img-block"><img src="images/image-qr-code.png" alt="QR code"></div>
-
-    <div class="info-block">
-      <h1>Improve your front-end skills by building projects</h1>
-      <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
-    </div>
-
+  <main class="card">
+      <figure class="card__figure">
+          <img class="card__image" src="./images/image-qr-code.png" alt="qr-code link">
+      </figure>
+      <div class="card__body">
+          <h1 class="card__title">Improve your front-end skills by building projects</h1>
+          <p class="card__text">Scan the QR code to visit Frontend Mentor and take your coding skills to the
+              next level
+          </p>
+      </div>
   </main>
+  <footer class="footer">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+      <a href="https://github.com/GUEKOUE/" target="_blank">Maciej Narejko</a>.
+  </footer>
 
 </body>
 </html>

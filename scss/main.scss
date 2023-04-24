@@ -1,0 +1,67 @@
+@use 'variables' as *;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: grid;
+	place-items: center;
+	height: 100vh;
+	font-size: 15px;
+	font-family: $ff-outfit;
+	background-color: $c-light-gray;
+}
+
+.card {
+	margin: 1rem;
+	max-width: 21.3em;
+	background-color: $c-white;
+	border-radius: 0.75rem;
+	box-shadow: 2px 8px 20px 0px $c-grayish-blue;
+
+	&__figure {
+		display: grid;
+		place-items: center;
+		margin: 1rem;
+		will-change: transform;
+		overflow: hidden;
+		border-radius: 0.75rem;
+	}
+
+	&__image {
+		display: block;
+		max-width: 100%;
+		transition: transform ease-in-out 0.4s;
+	}
+
+	&__image:hover {
+		transform: scale(1.3);
+	}
+
+	&__body {
+		margin: 1.5rem 2rem 2.3rem 1.5rem;
+	}
+	&__title {
+		font-size: 1.3rem;
+		text-indent: 4px;
+		color: $c-dark-blue;
+	}
+	&__text {
+		margin: 1rem 0.5rem;
+		word-spacing: 1px;
+		line-height: 1.3em;
+		color: $c-grayish-blue;
+	}
+
+	&__title,
+	&__text {
+		text-align: center;
+	}
+}
+
+.footer {
+	display: none;
+}
